@@ -3,21 +3,10 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777;
-  background-color: lightblue;
-  background-image: url("assets/images/white-and-blue-background-7.jpg");
 }
 
 * {
   box-sizing: border-box;
-}
-
-/* general */
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  clear: both;
 }
 
 h1,
@@ -64,24 +53,9 @@ h3 {
   border-bottom: 2px solid #ccc;
 }
 
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
-}
-
 nav {
   float: right auto;
-  margin-top: 25px;
-
+  margin-top: 25px
 }
 
 nav a {
@@ -97,21 +71,6 @@ nav a {
 nav a:first-child {
   border-left: 0 none;
 }
-
-/* footer */
-
-.footer {
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #ffff;
-  color: #ccc;
-  text-align: center;
-  background: #666;
-  border-top: 8px solid #4aaaa5;
-}
-
-/* sidebar */
 
 .sidebar {
   float: right;
@@ -140,12 +99,6 @@ h3,
 
 .social:last-child {
   margin-right: 0;
-}
-
-/* main */
-
-#main-container {
-  padding-top: 130px;
 }
 
 .main-section {
@@ -239,140 +192,14 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
-
-@media only screen and (max-width: 980px){
-  	body{
-  		background-color: lightgreen;
-      background: url("../images/wormz.png");
-
-  	}
- 
-  	#logo{
-  		margin-left: 9%;
-  	}
-
-  	nav {
-  		margin:0px;
-  		margin-right: 9%;
-  		margin-top: 2%;
-	}
-
-  	#main-container{
-  		width:50%;
-  		padding-left: 0px;
-  		padding-right: 0px;
-  	
-  	}
-  	.main-section{
-  		margin-left: -32%;
-  	}
-  
-  	.sidebar{
-  		width:50%;
-  		padding: 3% 3% 3% 4%;
-  		margin-right: -32%;
-
-
-  	}
-  	.social {
-  		width: 30%;
-  		height: 30%;
-  		margin-top: 2%;
-  		margin-right: 1%;
-  	}
-}
-
-@media only screen and (max-width: 768px){
-  	body{
-  		background-color: blue;
-      background: url("../images/seigaiha.png");      
-  	}
-    #logo{
-      margin-left:7.5%;
-      padding:0px;
-    }
-
-    nav{
-      margin-right: 7.5%;
-    }
-
-    #main-container{
-      width:100%;
-      padding-left: 7.5%;
-      padding-right: 0px;
-    }
-
-    .main-section{
-      margin:0 auto;
-    }
-
-    .sidebar{
-      width:100%;
-      min-width: 93.5%;
-      margin: 0 auto;
-      margin-right: 6.3%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-    .social {
-      width: 62px;
-      height: 62px;
-    }
-
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 10%;
+  background-color: navy;
 
 }
 
-@media only screen and (max-width: 640px){
-  	body{
-  		background-color: yellow;
-      background: url("../images/concrete_seamless.png");
 
-  	}
-  	header{
-  	  position: static;
-
-  	}
-
-
-    #logo{
-      margin:0 auto;
-      width:100%;
-      height: 70px;
-    }
-
-    nav{
-      margin-right: 7.5%;
-    }
-
-    nav a{
-      padding-left: 50px;
-      padding-right: 50px;
-    }
-
-    #main-container{
-      width:100%;
-      max-width:640px;
-      padding-left: 7.5%;
-      padding-right: 0px;
-    }
-
-    .main-section{
-      margin:0 auto;
-      margin-left: -3%;
-      margin-top: 5%;
-    }
-
-    .sidebar{
-      width:100%;
-      min-width: 100%;
-      /*margin-right: 56%;*/
-      margin: 0 auto;
-      margin-right: 2.7%;
-      margin-top: 5%;
-      margin-bottom: 5%;
-    }
-    .social {
-    width: 62px;
-    height: 62px;
-    }
-}
